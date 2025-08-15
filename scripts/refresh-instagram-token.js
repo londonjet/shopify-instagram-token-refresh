@@ -1,10 +1,11 @@
+// Axios HTTP client — a tool for making network requests (like fetch)
 const axios = require('axios');
 
-const SHOP = 'quick-start-336d2506.myshopify.com';  // your store domain here
+const SHOP = 'icartistic.myshopify.com';  // your store domain here
 const ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN;
 
 const NAMESPACE = 'custom';
-const KEY = 'test_access_token';
+const KEY = 'instagram_access_token';
 
 async function getCurrentToken() {
     try {
