@@ -3,8 +3,8 @@ name: Refresh Instagram Token
 on:
   workflow_dispatch:
   schedule:
-    # Runs every 25 days
-    - cron: '0 0 */25 * *'
+    # 03:00 AM UTC on 19th every month
+    - cron: '0 3 19 * *'
 
 jobs:
   refresh-token:
