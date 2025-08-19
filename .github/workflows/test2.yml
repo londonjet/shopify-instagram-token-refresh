@@ -1,0 +1,13 @@
+name: Test Cron 2
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'  # every 15 minutes
+  workflow_dispatch:        # optional manual trigger
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print timestamp
+        run: echo "Cron workflow ran at $(date)"
